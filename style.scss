@@ -28,4 +28,62 @@ body{
 
 
 // category
+.category {
+  &__up {
+    background: url("assets/img/banner/imgbgcategory.jpg"),rgba(250, 237, 210,1) ;
+    width:100%;
+    background-size:contain;
+    background-position: center center;
+    
+    &__wrapItems {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap:5%;
+      row-gap: 5%;
+
+      width:60%;
+      margin:auto;
+    }
+
+    &__item {
+      border:solid 1px black;
+      padding:20px 0;
+      display:flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items:center;
+
+      &__dish {
+        align-self:center;
+        width:60%;
+      }
+
+      &__title {
+        font-size:0.5em;
+      }
+
+      &__arrow {
+        align-self:center;
+
+      }
+    }
+  }
+}
+
+.category {
+  &__down {
+    display:flex;
+    justify-content:space-between;
+    gap:5%;
+    align-items:center;
+    width:80%;
+    margin:auto;
+    &__dish {
+      width:20%;
+      &__middle {
+        width:40%;
+      }
+    }
+  }
+}
 
