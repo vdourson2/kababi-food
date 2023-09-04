@@ -1,0 +1,22 @@
+@import "Variables/_variables.scss";
+
+body{
+  margin: 0;
+}
+
+.header{
+  // background-image: url('/assets/img/slider/img_bg_slider_home01.jpg');
+  background-color:$color-darkblue;
+  color: $color-white;
+  .header_phone{
+    float: right;
+  }
+  li{
+    list-style: none;
+    margin-bottom: 4px;
+    
+  }
+  .header_ul_li_home{
+    color:$color-darkgoldenrold;
+  }
+}
