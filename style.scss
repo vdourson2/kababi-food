@@ -145,7 +145,7 @@ html {
   position:relative;
   box-sizing: border-box;
   width: 100%;
-  height:650px;
+  height:125vw;
   font-family: $font-titles;
   // background-color:aquamarine
 }
@@ -156,7 +156,7 @@ html {
   background: linear-gradient(45deg, rgba(250,237,210,0.5) 0%, rgba(250,237,210,0.5) 100%), url(assets/img/banner/imgbgcategory.jpg);
   background-repeat: no-repeat;
   background-position:50%;
-  height: 500px;
+  height: 110vw;
   padding:20px;
   //width:100%;
   background-size:contain;
@@ -179,7 +179,6 @@ html {
     left:50%;
     width:100%;
     transform: translate(-50%,-160%);
-    
   }
 
   &__title{
@@ -200,13 +199,14 @@ html {
   &__wrapItems {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 120px 120px;
+    grid-template-rows: 25% 25%;
     column-gap:5%;
     row-gap: 5%;
 
     width:70%;
     margin:auto;
     padding:20px;
+    margin-top: 10vw;
   }
 
   &__item {
@@ -219,7 +219,7 @@ html {
 
     &__dish {
       align-self:center;
-      width:50%;
+      width:40%;
     }
 
     &__title {
@@ -248,7 +248,7 @@ html {
 
 .category__down{
   position:absolute;
-  top:70%;
+  top:100vw;
   left:50%;
   transform: translate(-50%,0%);
   display:flex;
