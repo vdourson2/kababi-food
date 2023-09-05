@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
+* {
+  box-sizing: border-box;
+}
+
 html {
   height: 100%;
 }
@@ -12,25 +16,25 @@ html body header {
 }
 
 .header {
-  background-image: url("/assets/img/slider/img_bg_slider_home01.jpg");
+  background: linear-gradient(159deg, rgba(2, 7, 9, 0.9906162294) 32%, rgba(9, 13, 15, 0) 100%, rgba(255, 255, 255, 0) 100%, rgb(0, 0, 0) 100%, rgb(0, 0, 0) 100%, rgb(0, 0, 0) 100%), url(assets/img/slider/img_bg_slider_home01.jpg);
   background-size: cover;
   background-position: center center;
   color: white;
+}
+.header li {
+  font-family: "Open Sans", sans-serif;
 }
 .header .header_img {
   margin: 10px;
 }
 .header .header_logo {
   display: flex;
-  align-items: flex-end;
-  margin-left: 10px;
-  margin-top: 80px;
+  justify-content: center;
 }
 .header .header_title {
   display: flex;
   justify-content: center;
   font-family: "Cinzel", serif;
-  -webkit-text-stroke: 0.5px black;
 }
 .header .fa-phone {
   color: #C8A969;
@@ -43,31 +47,72 @@ html body header {
 .header .header_phone {
   float: right;
 }
-.header .header_header_phone_book, .header .header_header_phone_num {
+.header .header_header_phone_book,
+.header .header_header_phone_num {
   list-style: none;
   margin: 5px;
 }
-.header .header_ul_li_home, .header .header_ul_li_about, .header .header_ul_li_page, .header .header_ul_li_shop, .header .header_ul_li_contact {
+.header .header_ul_li_home,
+.header .header_ul_li_about,
+.header .header_ul_li_page,
+.header .header_ul_li_shop,
+.header .header_ul_li_contact {
   list-style: none;
   margin-bottom: 4px;
   cursor: pointer;
   width: 80px;
 }
-.header li:hover {
+.header .header_ul_li_home:hover,
+.header .header_ul_li_about:hover,
+.header .header_ul_li_page:hover,
+.header .header_ul_li_shop:hover,
+.header .header_ul_li_contact:hover {
   color: #C8A969;
 }
-.header .header_ul_li_home {
-  color: #C8A969;
-}
-.header .header_p {
-  margin: auto;
+
+.header_p {
+  margin-left: 150px;
   font-size: small;
+  cursor: pointer;
   padding: 5px;
   border: 1px solid white;
-  width: 170px;
+  width: 180px;
   color: #C8A969;
 }
-.header .header_p:hover {
+
+.header_p:hover {
   background-color: #C8A969;
   color: black;
+}
+
+@media only screen and (min-width: 768px) {
+  .header_p {
+    margin: auto;
+  }
+  .header_phone {
+    margin: 20px;
+  }
+  .header_phone .header_header_phone_num {
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  li {
+    display: inline;
+  }
+  .header_ul {
+    display: flex;
+    justify-content: center;
+  }
+  .header_phone {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .header_title {
+    float: none;
+    width: 50px;
+    font-size: 300%;
+    margin-left: 250px;
+  }
 }/*# sourceMappingURL=style.css.map */

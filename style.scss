@@ -1,74 +1,134 @@
 @import "Variables/_variables.scss";
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
 
 // Header
 
-html{
+* {
+  box-sizing: border-box;
+}
+
+html {
   height: 100%;
-  body{
+  body {
     min-height: 100%;
     margin: 0;
-    header{
+    header {
       min-height: 100vh;
     }
   }
 }
 
-.header{
-  background-image: url('/assets/img/slider/img_bg_slider_home01.jpg');
+.header {
+  // background-image: url('/assets/img/slider/img_bg_slider_home01.jpg');
+  background: linear-gradient(
+      159deg,
+      rgba(2, 7, 9, 0.9906162294019171) 32%,
+      rgba(9, 13, 15, 0) 100%,
+      rgba(255, 255, 255, 0) 100%,
+      rgba(0, 0, 0, 1) 100%,
+      rgba(0, 0, 0, 1) 100%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url(assets/img/slider/img_bg_slider_home01.jpg);
   background-size: cover;
   background-position: center center;
   color: $color-white;
-  .header_img{margin:10px}
-  .header_logo{
-    display: flex;
-    align-items: flex-end;
-    margin-left: 10px;
-    margin-top: 80px;
+  li {
+    font-family: "Open Sans", sans-serif;
   }
-  .header_title{
+  .header_img {
+    margin: 10px;
+  }
+  .header_logo {
     display: flex;
     justify-content: center;
-    font-family: 'Cinzel', serif;
-    -webkit-text-stroke: 0.5px black;
   }
-  .fa-phone{color:$color-darkgold}
-  .header_header_phone_book{
+  .header_title {
+    display: flex;
+    justify-content: center;
+    font-family: "Cinzel", serif;  }
+  .fa-phone {
+    color: $color-darkgold;
+  }
+  .header_header_phone_book {
     padding: 10px;
     background-color: $color-darkgold;
     border-radius: 5px;
   }
-  .header_phone{
+  .header_phone {
     float: right;
   }
-  .header_header_phone_book, .header_header_phone_num{
-    list-style:none;
+  .header_header_phone_book,
+  .header_header_phone_num {
+    list-style: none;
     margin: 5px;
   }
-  .header_ul_li_home, .header_ul_li_about, .header_ul_li_page, .header_ul_li_shop, .header_ul_li_contact{
+  .header_ul_li_home,
+  .header_ul_li_about,
+  .header_ul_li_page,
+  .header_ul_li_shop,
+  .header_ul_li_contact {
     list-style: none;
     margin-bottom: 4px;
     cursor: pointer;
     width: 80px;
   }
-  li:hover{
+
+  .header_ul_li_home:hover,
+  .header_ul_li_about:hover,
+  .header_ul_li_page:hover,
+  .header_ul_li_shop:hover,
+  .header_ul_li_contact:hover {
     color: $color-darkgold;
   }
-  .header_ul_li_home{
-    color:$color-darkgold;
-  }
+}
+.header_p {
+  margin-left: 150px;
+  font-size: small;
+  cursor: pointer;
+  padding: 5px;
+  border: 1px solid $color-white;
+  width: 180px;
+  color: $color-darkgold;
+}
+.header_p:hover {
+  background-color: $color-darkgold;
+  color: $color-black;
+}
+
+@media only screen and (min-width: 768px) {
   .header_p{
     margin: auto;
-    font-size: small;
-    // -webkit-text-stroke: 0.5px $color-black;
-    padding: 5px;
-    border: 1px solid $color-white;
-    width: 170px;
-    color: $color-darkgold;
   }
-  .header_p:hover{
-    background-color: $color-darkgold;
-    color: $color-black;
+  .header_phone{
+    margin:20px;
+    .header_header_phone_num{
+      margin-top:10px;
+      margin-right: 10px;
+    }
+  }
+}
+@media only screen and (min-width: 1024px) {
+  li {
+    display: inline;
+  }
+  .header_ul {
+    display: flex;
+    // text-align: center;
+    // width: 400px;
+    // float: right;
+    justify-content: center;
+    // align-content: center;
+  }
+  .header_phone {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .header_title {
+    float: none;
+    width: 50px;
+    font-size: 300%;
+    margin-left: 250px;
   }
 }
