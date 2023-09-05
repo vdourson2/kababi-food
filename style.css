@@ -1,18 +1,73 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
+html {
+  height: 100%;
+}
+html body {
+  min-height: 100%;
   margin: 0;
+}
+html body header {
+  min-height: 100vh;
 }
 
 .header {
-  background-color: darkblue;
+  background-image: url("/assets/img/slider/img_bg_slider_home01.jpg");
+  background-size: cover;
+  background-position: center center;
   color: white;
+}
+.header .header_img {
+  margin: 10px;
+}
+.header .header_logo {
+  display: flex;
+  align-items: flex-end;
+  margin-left: 10px;
+  margin-top: 80px;
+}
+.header .header_title {
+  display: flex;
+  justify-content: center;
+  font-family: "Cinzel", serif;
+  -webkit-text-stroke: 0.5px black;
+}
+.header .fa-phone {
+  color: #C8A969;
+}
+.header .header_header_phone_book {
+  padding: 10px;
+  background-color: #C8A969;
+  border-radius: 5px;
 }
 .header .header_phone {
   float: right;
 }
-.header li {
+.header .header_header_phone_book, .header .header_header_phone_num {
+  list-style: none;
+  margin: 5px;
+}
+.header .header_ul_li_home, .header .header_ul_li_about, .header .header_ul_li_page, .header .header_ul_li_shop, .header .header_ul_li_contact {
   list-style: none;
   margin-bottom: 4px;
+  cursor: pointer;
+  width: 80px;
+}
+.header li:hover {
+  color: #C8A969;
 }
 .header .header_ul_li_home {
-  color: darkgoldenrod;
+  color: #C8A969;
+}
+.header .header_p {
+  margin: auto;
+  font-size: small;
+  padding: 5px;
+  border: 1px solid white;
+  width: 170px;
+  color: #C8A969;
+}
+.header .header_p:hover {
+  background-color: #C8A969;
+  color: black;
 }/*# sourceMappingURL=style.css.map */
