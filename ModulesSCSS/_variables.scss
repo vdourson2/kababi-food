@@ -27,3 +27,32 @@ $color-section:#FAEDD2;
 //Fonts
 $font-titles:'Nanum Myeongjo', serif;
 $font-p:'Roboto', sans-serif;
+
+//Extending classes
+%filigran{
+    text-transform: uppercase;
+    font-size:70px;
+    font-weight:800;
+    color:$color-darkgold;
+    opacity:0.3;
+  }
+
+@mixin wrapTitle($relativeHeight){
+    position: absolute;
+    left:50%;
+    width:100%;
+    transform: translate(-50%,$relativeHeight);
+    &__title{
+      text-transform: uppercase;
+      font-size: large;
+      text-align: center;
+      margin:0;
+    }
+    &__text {
+      font-family: $font-p;
+      text-align: center;
+      font-size:0.8rem;
+      margin:0;
+      padding:5px 0 0 0;
+    }
+  }
