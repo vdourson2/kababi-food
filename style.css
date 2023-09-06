@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Roboto:wght@100;300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
-.category__up__filigran {
+.about_filigran, .category__up__filigran {
   text-transform: uppercase;
   font-size: 70px;
   font-weight: 800;
@@ -146,7 +146,7 @@ html body header {
   position: relative;
   box-sizing: border-box;
   width: 100%;
-  height: 125vw;
+  height: 140vw;
   font-family: "Nanum Myeongjo", serif;
 }
 
@@ -244,6 +244,59 @@ html body header {
   width: 45%;
   border: white solid 20px;
   border-radius: 50%;
+}
+
+.about {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  height: 140vw;
+  font-family: "Nanum Myeongjo", serif;
+  padding: 20px;
+}
+.about_filigran {
+  margin: 0.4em 0 0.2em 0;
+}
+.about_wrapTitle {
+  position: absolute;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -160%);
+  text-align: center;
+}
+.about_wrapTitle__title {
+  text-transform: uppercase;
+  font-size: large;
+  text-align: center;
+  margin: 0;
+}
+.about_wrapTitle__text {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-size: 0.8rem;
+  margin: 0;
+  padding: 5px 0 0 0;
+}
+.about_logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.about_photo {
+  display: flex;
+  justify-content: center;
+}
+.about_whos p {
+  text-align: center;
+  margin-top: 10px;
+}
+.about_whos .discover {
+  padding: 10px;
+  background-color: #C8A969;
+  width: 180px;
+  color: white;
+  margin: auto;
+  margin-top: 10px;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
