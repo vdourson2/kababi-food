@@ -30,12 +30,18 @@
       margin-top: 10px;
     }
     .discover{
-      padding: 10px;
+      padding:7px;
       background-color:$color-darkgold;
       width: 180px;
       color: $color-white;
       margin:auto;
       margin-top: 10px;
+      font-size: small;
     }
   }
 }
+
+@media only screen and(min-width: 1024px){
+  
+};
+

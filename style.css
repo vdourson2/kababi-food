@@ -291,12 +291,13 @@ html body header {
   margin-top: 10px;
 }
 .about_whos .discover {
-  padding: 10px;
+  padding: 7px;
   background-color: #C8A969;
   width: 180px;
   color: white;
   margin: auto;
   margin-top: 10px;
+  font-size: small;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
