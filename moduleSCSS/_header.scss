@@ -30,7 +30,8 @@ html {
     font-family: "Open Sans", sans-serif;
   }
   .header_img {
-    margin: 10px;
+    margin: 20px;
+    margin-bottom: 20px;
   }
   .header_logo {
     display: flex;
@@ -39,7 +40,10 @@ html {
   .header_title {
     display: flex;
     justify-content: center;
-    font-family: "Cinzel", serif;  }
+    font-family: "Cinzel", serif;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
   .fa-phone {
     color: $color-darkgold;
   }
@@ -54,7 +58,7 @@ html {
   .header_header_phone_book,
   .header_header_phone_num {
     list-style: none;
-    margin: 5px;
+    margin: 20px;
   }
   .header_ul_li_home,
   .header_ul_li_about,
@@ -65,6 +69,7 @@ html {
     margin-bottom: 4px;
     cursor: pointer;
     width: 80px;
+    margin-left: 20px;
     &:hover{
       color: $color-darkgold;
     }
@@ -74,12 +79,62 @@ html {
   margin-left: 150px;
   font-size: small;
   cursor: pointer;
-  padding: 5px;
+  padding: 10px;
   border: 1px solid $color-white;
-  width: 180px;
+  width: 190px;
   color: $color-darkgold;
   &:hover {
     background-color: $color-darkgold;
     color: $color-black;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .header_p{
+    margin: auto;
+  }
+  .header_phone{
+    margin:20px;
+    .header_header_phone_num{
+      margin-top:10px;
+      margin-right: 10px;
+    }
+  }
+}
+@media only screen and (min-width: 1024px) {
+  li {
+    display: inline;
+  }
+  .header_p{
+    margin-left: 80px;
+  }
+  .header_logo{
+    position: absolute;
+    top:200px;
+    left: 350px;
+  }
+  .header_ul {
+    position: absolute;
+    left: 25%;
+    top: 25px;
+    li{
+      margin-left:15px;
+    }
+  }
+  .header_phone {
+    display: flex;
+    flex-direction: row-reverse;
+    .header_header_phone_num{
+      margin-top: 30px;
+    }
+  }
+  .header_title {
+    float: none;
+    width: 50px;
+    font-size: 500%;
+    .header_title_head{
+      margin-left: 450px;
+      margin-top:230px;
+    }
   }
 }
