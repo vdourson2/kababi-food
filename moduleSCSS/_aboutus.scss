@@ -7,11 +7,11 @@
   height: 90vw;
   font-family: $font-titles;
   padding: 20px;
-  &_filigran {
+  &__filigran {
     @extend %filigran;
     margin: 0.4em 0 0.2em 0;
   }
-  &_wrapTitle {
+  &__wrapTitle {
     @include wrapTitle(-160%);
     text-align: center;
   }
@@ -37,6 +37,7 @@
       margin: auto;
       margin-top: 10px;
       font-size: small;
+      text-align: center;
     }
   }
 }
@@ -66,9 +67,16 @@
       justify-content: center;
       flex-direction: column;
       width: 350px;
+      height: 250px;
       font-size: larger;
       line-height: 25px;
       text-align: left;
+      margin-left: 30px;
+      padding-top: 200px;
+    }
+    .discover{
+      margin-top: 80px;
+      text-align: center;
       margin-left: 30px;
     }
   }

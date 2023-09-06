@@ -59,7 +59,7 @@ table {
   border-spacing: 0;
 }
 
-.about_filigran, .category__up__filigran {
+.about__filigran, .category__up__filigran {
   text-transform: uppercase;
   font-size: 70px;
   font-weight: 800;
@@ -376,23 +376,23 @@ html body header {
   font-family: "Nanum Myeongjo", serif;
   padding: 20px;
 }
-.about_filigran {
+.about__filigran {
   margin: 0.4em 0 0.2em 0;
 }
-.about_wrapTitle {
+.about__wrapTitle {
   position: absolute;
   left: 50%;
   width: 100%;
   transform: translate(-50%, -160%);
   text-align: center;
 }
-.about_wrapTitle__title {
+.about__wrapTitle__title {
   text-transform: uppercase;
   font-size: large;
   text-align: center;
   margin: 0;
 }
-.about_wrapTitle__text {
+.about__wrapTitle__text {
   font-family: "Open Sans", sans-serif;
   text-align: center;
   font-size: 0.8rem;
@@ -419,6 +419,7 @@ html body header {
   margin: auto;
   margin-top: 10px;
   font-size: small;
+  text-align: center;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -467,9 +468,16 @@ html body header {
     justify-content: center;
     flex-direction: column;
     width: 350px;
+    height: 250px;
     font-size: larger;
     line-height: 25px;
     text-align: left;
+    margin-left: 30px;
+    padding-top: 200px;
+  }
+  .about .discover {
+    margin-top: 80px;
+    text-align: center;
     margin-left: 30px;
   }
 }/*# sourceMappingURL=style.css.map */
