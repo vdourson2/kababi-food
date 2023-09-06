@@ -254,8 +254,12 @@ html body header {
 }
 
 @media only screen and (min-width: 1024px) {
+  .category {
+    height: 80vw;
+  }
   .category__up {
-    background-position: 0;
+    background-position: 0 0;
+    height: 50vw;
   }
   .category__up__filigran {
     text-transform: uppercase;
@@ -313,6 +317,15 @@ html body header {
   .category__up__item__arrow {
     padding: 20px 0;
     width: 8%;
+  }
+  .category__down {
+    top: 50vw;
+  }
+  .category__down__dish {
+    width: 25%;
+  }
+  .category__down__dish__middle {
+    width: 50%;
   }
 }
 @media only screen and (min-width: 768px) {

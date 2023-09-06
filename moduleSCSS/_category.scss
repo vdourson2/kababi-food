@@ -166,13 +166,14 @@
   
 //Desktop
 
-  @media only screen and (min-width: 1024px) {
-    // .category {
-       
-    //   }
+@media only screen and (min-width: 1024px) {
+    .category {
+        height:80vw;
+      }
       
-      .category__up {
-        background-position:0;
+    .category__up {
+        background-position:0 0;
+        height: 50vw;
       
         &__filigran{
             @include filigranDesktop;
@@ -214,6 +215,7 @@
                 width: 8%;
             }
         }
+    }
     //     &__item:hover{
           
     //       .category__up__item__dish{
@@ -228,17 +230,14 @@
     //     }
     //   }
       
-    //   .category__down{
+    .category__down{
+        top:50vw;
+        &__dish {
+            width:25%;
+            &__middle {
+                width:50%;
+            }
+        }
+    }
         
-    //     &__dish {
-          
-    //       &__middle {
-            
-    //       }
-    //     }
-    //   }
-    
-    //   .test{
-        
-      }
-  }
+}
