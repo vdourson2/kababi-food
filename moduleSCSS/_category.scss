@@ -99,70 +99,70 @@
     }
   }
 
-  @media only screen and (min-width: 768px) {
-    .category {
+//   @media only screen and (min-width: 768px) {
+//     .category {
        
-    }
+//     }
     
-    .category__up {
+//     .category__up {
       
     
-      &__filigran{
+//       &__filigran{
         
-      }
+//       }
     
-      &__wrapTitle{
+//       &__wrapTitle{
         
-      }
+//       }
       
-      &__wrapItems {
+//       &__wrapItems {
         
-      }
+//       }
     
-      &__item {
+//       &__item {
         
     
-        &__dish {
+//         &__dish {
          
-        }
+//         }
     
-        &__title {
+//         &__title {
           
-        }
+//         }
     
-        &__arrow {
+//         &__arrow {
           
     
-        }
-      }
-      &__item:hover{
+//         }
+//       }
+//       &__item:hover{
         
-        .category__up__item__dish{
+//         .category__up__item__dish{
           
-        }
-        h4{
+//         }
+//         h4{
           
-        }
-        .category__up__item__arrow {
+//         }
+//         .category__up__item__arrow {
          
-        }
-      }
-    }
+//         }
+//       }
+//     }
     
-    .category__down{
+//     .category__down{
       
-      &__dish {
+//       &__dish {
         
-        &__middle {
+//         &__middle {
           
-        }
-      }
-    }
+//         }
+//       }
+//     }
   
-    .test{
+//     .test{
       
-    }
-}
+//     }
+// }
   
 //Desktop
 
@@ -216,19 +216,6 @@
             }
         }
     }
-    //     &__item:hover{
-          
-    //       .category__up__item__dish{
-            
-    //       }
-    //       h4{
-            
-    //       }
-    //       .category__up__item__arrow {
-           
-    //       }
-    //     }
-    //   }
       
     .category__down{
         top:50vw;
