@@ -1,0 +1,89 @@
+// Header
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  body {
+    min-height: 100%;
+    margin: 0;
+    header {
+      min-height: 100vh;
+    }
+  }
+}
+
+.header {
+  // background-image: url('/assets/img/slider/img_bg_slider_home01.jpg');
+  background: linear-gradient(
+      159deg,
+      rgba(2, 7, 9, 0.9906162294019171) 32%,
+      rgba(9, 13, 15, 0) 100%,
+      rgba(255, 255, 255, 0) 100%,
+      rgba(0, 0, 0, 1) 100%,
+      rgba(0, 0, 0, 1) 100%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url(assets/img/slider/img_bg_slider_home01.jpg);
+  background-size: cover;
+  background-position: center center;
+  color: $color-white;
+  li {
+    font-family: "Open Sans", sans-serif;
+  }
+  .header_img {
+    margin: 10px;
+  }
+  .header_logo {
+    display: flex;
+    justify-content: center;
+  }
+  .header_title {
+    display: flex;
+    justify-content: center;
+    font-family: "Cinzel", serif;  }
+  .fa-phone {
+    color: $color-darkgold;
+  }
+  .header_header_phone_book {
+    padding: 10px;
+    background-color: $color-darkgold;
+    border-radius: 5px;
+  }
+  .header_phone {
+    float: right;
+  }
+  .header_header_phone_book,
+  .header_header_phone_num {
+    list-style: none;
+    margin: 5px;
+  }
+  .header_ul_li_home,
+  .header_ul_li_about,
+  .header_ul_li_page,
+  .header_ul_li_shop,
+  .header_ul_li_contact {
+    list-style: none;
+    margin-bottom: 4px;
+    cursor: pointer;
+    width: 80px;
+    &:hover{
+      color: $color-darkgold;
+    }
+  }
+}
+.header_p {
+  margin-left: 150px;
+  font-size: small;
+  cursor: pointer;
+  padding: 5px;
+  border: 1px solid $color-white;
+  width: 180px;
+  color: $color-darkgold;
+  &:hover {
+    background-color: $color-darkgold;
+    color: $color-black;
+  }
+}

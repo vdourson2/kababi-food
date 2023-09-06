@@ -1,191 +1,13 @@
-@import "ModulesSCSS/_variables.scss";
-@import "ModulesSCSS/reset.scss";
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Roboto:wght@100;300;400&display=swap');
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
+@import "moduleSCSS/_variables.scss";
+@import "moduleSCSS/_font.scss";
+@import "moduleSCSS/_header.scss";
+@import "ModulesSCSS/_reset.scss";
 
 // Header
 
 * {
   box-sizing: border-box;
 }
-
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-html {
-  height: 100%;
-  body {
-    min-height: 100%;
-    margin: 0;
-    header {
-      min-height: 100vh;
-    }
-  }
-}
-
-.header {
-  // background-image: url('/assets/img/slider/img_bg_slider_home01.jpg');
-  background: linear-gradient(
-      159deg,
-      rgba(2, 7, 9, 0.9906162294019171) 32%,
-      rgba(9, 13, 15, 0) 100%,
-      rgba(255, 255, 255, 0) 100%,
-      rgba(0, 0, 0, 1) 100%,
-      rgba(0, 0, 0, 1) 100%,
-      rgba(0, 0, 0, 1) 100%
-    ),
-    url(assets/img/slider/img_bg_slider_home01.jpg);
-  background-size: cover;
-  background-position: center center;
-  color: $color-white;
-  li {
-    font-family: "Open Sans", sans-serif;
-  }
-  .header_img {
-    margin: 10px;
-  }
-  .header_logo {
-    display: flex;
-    justify-content: center;
-  }
-  .header_title {
-    display: flex;
-    justify-content: center;
-    font-family: "Cinzel", serif;  }
-  .fa-phone {
-    color: $color-darkgold;
-  }
-  .header_header_phone_book {
-    padding: 10px;
-    background-color: $color-darkgold;
-    border-radius: 5px;
-  }
-  .header_phone {
-    float: right;
-  }
-  .header_header_phone_book,
-  .header_header_phone_num {
-    list-style: none;
-    margin: 5px;
-  }
-  .header_ul_li_home,
-  .header_ul_li_about,
-  .header_ul_li_page,
-  .header_ul_li_shop,
-  .header_ul_li_contact {
-    list-style: none;
-    margin-bottom: 4px;
-    cursor: pointer;
-    width: 80px;
-  }
-
-  .header_ul_li_home:hover,
-  .header_ul_li_about:hover,
-  .header_ul_li_page:hover,
-  .header_ul_li_shop:hover,
-  .header_ul_li_contact:hover {
-    color: $color-darkgold;
-  }
-}
-.header_p {
-  margin-left: 150px;
-  font-size: small;
-  cursor: pointer;
-  padding: 5px;
-  border: 1px solid $color-white;
-  width: 180px;
-  color: $color-darkgold;
-}
-.header_p:hover {
-  background-color: $color-darkgold;
-  color: $color-black;
-}
-
-@media only screen and (min-width: 768px) {
-  .header_p{
-    margin: auto;
-  }
-  .header_phone{
-    margin:20px;
-    .header_header_phone_num{
-      margin-top:10px;
-      margin-right: 10px;
-    }
-  }
-}
-@media only screen and (min-width: 1024px) {
-  li {
-    display: inline;
-  }
-  .header_ul {
-    display: flex;
-    // text-align: center;
-    // width: 400px;
-    // float: right;
-    justify-content: center;
-    // align-content: center;
-  }
-  .header_phone {
-    display: flex;
-    flex-direction: row-reverse;
-  }
-  .header_title {
-    float: none;
-    width: 50px;
-    font-size: 300%;
-    margin-left: 250px;
-  }
-}
-
-
-
 
 
 
@@ -293,6 +115,52 @@ html {
       border:white solid 20px;
       border-radius: 50%;
     }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .header_p{
+    margin: auto;
+  }
+  .header_phone{
+    margin:20px;
+    .header_header_phone_num{
+      margin-top:10px;
+      margin-right: 10px;
+    }
+  }
+}
+@media only screen and (min-width: 1024px) {
+  li {
+    display: inline;
+  }
+  .header_p{
+    margin-left: 50px;
+  }
+  .header_logo{
+    position: absolute;
+    top:130px;
+    left: 400px;
+  }
+  .header_ul {
+    position: absolute;
+    left: 25%;
+    top: 0px;
+    li{
+      margin-left:15px;
+    }
+  }
+  .header_phone {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 10px;
+  }
+  .header_title {
+    float: none;
+    width: 50px;
+    font-size: 300%;
+    margin-left: 250px;
+    margin-top: 130px;
   }
 }
 
