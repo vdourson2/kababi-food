@@ -4,55 +4,5 @@
 @import "moduleSCSS/_category.scss";
 @import "moduleSCSS/_reset.scss";
 
-// Header
 
-
-// category
-
-
-@media only screen and (min-width: 768px) {
-  .header_p{
-    margin: auto;
-  }
-  .header_phone{
-    margin:20px;
-    .header_header_phone_num{
-      margin-top:10px;
-      margin-right: 10px;
-    }
-  }
-}
-@media only screen and (min-width: 1024px) {
-  li {
-    display: inline;
-  }
-  .header_p{
-    margin-left: 50px;
-  }
-  .header_logo{
-    position: absolute;
-    top:130px;
-    left: 400px;
-  }
-  .header_ul {
-    position: absolute;
-    left: 25%;
-    top: 0px;
-    li{
-      margin-left:15px;
-    }
-  }
-  .header_phone {
-    display: flex;
-    flex-direction: row-reverse;
-    margin-top: 10px;
-  }
-  .header_title {
-    float: none;
-    width: 50px;
-    font-size: 300%;
-    margin-left: 250px;
-    margin-top: 130px;
-  }
-}
 

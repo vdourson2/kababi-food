@@ -30,7 +30,8 @@ html body header {
   font-family: "Open Sans", sans-serif;
 }
 .header .header_img {
-  margin: 10px;
+  margin: 20px;
+  margin-bottom: 20px;
 }
 .header .header_logo {
   display: flex;
@@ -40,6 +41,8 @@ html body header {
   display: flex;
   justify-content: center;
   font-family: "Cinzel", serif;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 .header .fa-phone {
   color: #C8A969;
@@ -55,7 +58,7 @@ html body header {
 .header .header_header_phone_book,
 .header .header_header_phone_num {
   list-style: none;
-  margin: 5px;
+  margin: 20px;
 }
 .header .header_ul_li_home,
 .header .header_ul_li_about,
@@ -66,6 +69,7 @@ html body header {
   margin-bottom: 4px;
   cursor: pointer;
   width: 80px;
+  margin-left: 20px;
 }
 .header .header_ul_li_home:hover,
 .header .header_ul_li_about:hover,
@@ -79,9 +83,9 @@ html body header {
   margin-left: 150px;
   font-size: small;
   cursor: pointer;
-  padding: 5px;
+  padding: 10px;
   border: 1px solid white;
-  width: 180px;
+  width: 190px;
   color: #C8A969;
 }
 .header_p:hover {
@@ -89,6 +93,55 @@ html body header {
   color: black;
 }
 
+@media only screen and (min-width: 768px) {
+  .header_p {
+    margin: auto;
+  }
+  .header_phone {
+    margin: 20px;
+  }
+  .header_phone .header_header_phone_num {
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  li {
+    display: inline;
+  }
+  .header_p {
+    margin-left: 80px;
+  }
+  .header_logo {
+    position: absolute;
+    top: 200px;
+    left: 350px;
+  }
+  .header_ul {
+    position: absolute;
+    left: 25%;
+    top: 25px;
+  }
+  .header_ul li {
+    margin-left: 15px;
+  }
+  .header_phone {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .header_phone .header_header_phone_num {
+    margin-top: 30px;
+  }
+  .header_title {
+    float: none;
+    width: 50px;
+    font-size: 500%;
+  }
+  .header_title .header_title_head {
+    margin-left: 450px;
+    margin-top: 230px;
+  }
+}
 .category {
   position: relative;
   box-sizing: border-box;
@@ -249,50 +302,4 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
-}
-
-@media only screen and (min-width: 768px) {
-  .header_p {
-    margin: auto;
-  }
-  .header_phone {
-    margin: 20px;
-  }
-  .header_phone .header_header_phone_num {
-    margin-top: 10px;
-    margin-right: 10px;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  li {
-    display: inline;
-  }
-  .header_p {
-    margin-left: 50px;
-  }
-  .header_logo {
-    position: absolute;
-    top: 130px;
-    left: 400px;
-  }
-  .header_ul {
-    position: absolute;
-    left: 25%;
-    top: 0px;
-  }
-  .header_ul li {
-    margin-left: 15px;
-  }
-  .header_phone {
-    display: flex;
-    flex-direction: row-reverse;
-    margin-top: 10px;
-  }
-  .header_title {
-    float: none;
-    width: 50px;
-    font-size: 300%;
-    margin-left: 250px;
-    margin-top: 130px;
-  }
 }/*# sourceMappingURL=style.css.map */
