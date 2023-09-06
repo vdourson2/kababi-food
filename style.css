@@ -5,7 +5,61 @@
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Roboto:wght@100;300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
-.category__up__filigran {
+* {
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.about_filigran, .category__up__filigran {
   text-transform: uppercase;
   font-size: 70px;
   font-weight: 800;
@@ -150,7 +204,7 @@ html body header {
   position: relative;
   box-sizing: border-box;
   width: 100%;
-  height: 140vw;
+  height: 125vw;
   font-family: "Nanum Myeongjo", serif;
 }
 
@@ -252,11 +306,73 @@ html body header {
   border-radius: 50%;
 }
 
+@media only screen and (min-width: 1024px) {
+  .category__up {
+    background-position: 0;
+  }
+  .category__up__filigran {
+    text-transform: uppercase;
+    font-size: 170px;
+    font-weight: 400;
+    transform: scale(1, 1.2);
+    color: #C8A969;
+    opacity: 0.2;
+    margin: 0.4em 0 0.2em 0;
+  }
+  .category__up__wrapTitle {
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -220%);
+  }
+  .category__up__wrapTitle__title {
+    text-transform: uppercase;
+    font-size: 40px;
+    text-align: center;
+    margin: 0;
+  }
+  .category__up__wrapTitle__text {
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 10px 0 0 0;
+    padding: 5px 0 0 0;
+  }
+  .category__up__wrapItems {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 25%;
+    -moz-column-gap: 2%;
+         column-gap: 2%;
+    row-gap: 2%;
+    width: 78%;
+    margin: auto;
+    padding: 0px;
+    margin-top: 3vw;
+  }
+  .category__up__item {
+    padding: 20px 0;
+  }
+  .category__up__item__dish {
+    align-self: center;
+    padding: 10px 0;
+    width: 25%;
+  }
+  .category__up__item__title {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2em;
+    margin: 5px 0;
+  }
+  .category__up__item__arrow {
+    padding: 20px 0;
+    width: 8%;
+  }
+}
 .about {
   position: relative;
   box-sizing: border-box;
   width: 100%;
-  height: 140vw;
+  height: 90vw;
   font-family: "Nanum Myeongjo", serif;
   padding: 20px;
 }
@@ -277,7 +393,7 @@ html body header {
   margin: 0;
 }
 .about_wrapTitle__text {
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-align: center;
   font-size: 0.8rem;
   margin: 0;
@@ -293,7 +409,6 @@ html body header {
   justify-content: center;
 }
 .about_whos p {
-  text-align: center;
   margin-top: 10px;
 }
 .about_whos .discover {
@@ -306,106 +421,55 @@ html body header {
   font-size: small;
 }
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-* {
-  box-sizing: border-box;
-}
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-@media only screen and (min-width: 768px) {
-  .header_p {
-    margin: auto;
-  }
-  .header_phone {
-    margin: 20px;
-  }
-  .header_phone .header_header_phone_num {
-    margin-top: 10px;
-    margin-right: 10px;
-  }
-}
 @media only screen and (min-width: 1024px) {
-  li {
-    display: inline;
+  .about__filigran {
+    text-transform: uppercase;
+    font-size: 170px;
+    font-weight: 400;
+    transform: scale(1, 1.2);
+    color: #C8A969;
+    opacity: 0.2;
+    margin: 0.4em 0 0.2em 0;
   }
-  .header_p {
-    margin-left: 50px;
-  }
-  .header_logo {
+  .about__wrapTitle {
     position: absolute;
-    top: 130px;
-    left: 400px;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -220%);
   }
-  .header_ul {
-    position: absolute;
-    left: 25%;
-    top: 0px;
+  .about__wrapTitle__title {
+    text-transform: uppercase;
+    font-size: 40px;
+    text-align: center;
+    margin: 0;
   }
-  .header_ul li {
-    margin-left: 15px;
+  .about__wrapTitle__text {
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 10px 0 0 0;
+    padding: 5px 0 0 0;
   }
-  .header_phone {
+  .about__title {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2em;
+    margin: 5px 0;
+  }
+  .about_whos {
     display: flex;
-    flex-direction: row-reverse;
-    margin-top: 10px;
+    align-content: center;
+    justify-content: center;
+    margin-left: 200px;
   }
-  .header_title {
-    float: none;
-    width: 50px;
-    font-size: 300%;
-    margin-left: 250px;
-    margin-top: 130px;
+  .about_lorem {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 350px;
+    font-size: larger;
+    line-height: 25px;
+    text-align: left;
+    margin-left: 30px;
   }
 }/*# sourceMappingURL=style.css.map */

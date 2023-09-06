@@ -1,47 +1,75 @@
 // About Us
 
-.about{
-  position:relative;
+.about {
+  position: relative;
   box-sizing: border-box;
   width: 100%;
-  height:140vw;
+  height: 90vw;
   font-family: $font-titles;
   padding: 20px;
-  &_filigran{
+  &_filigran {
     @extend %filigran;
-    margin:0.4em 0 0.2em 0;
+    margin: 0.4em 0 0.2em 0;
   }
-  &_wrapTitle{
+  &_wrapTitle {
     @include wrapTitle(-160%);
     text-align: center;
   }
-  &_logo{
+  &_logo {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
   }
-  &_photo{
+  &_photo {
     display: flex;
     justify-content: center;
   }
-  &_whos{
-    p{
-      text-align: center;
+  &_whos {
+    p {
+      // text-align: center;
       margin-top: 10px;
     }
-    .discover{
-      padding:7px;
-      background-color:$color-darkgold;
+    .discover {
+      padding: 7px;
+      background-color: $color-darkgold;
       width: 180px;
       color: $color-white;
-      margin:auto;
+      margin: auto;
       margin-top: 10px;
       font-size: small;
     }
   }
 }
 
-@media only screen and(min-width: 1024px){
-  
-};
-
+@media only screen and (min-width: 1024px) {
+  .about {
+    &__filigran {
+      @include filigranDesktop;
+      margin: 0.4em 0 0.2em 0;
+    }
+    &__wrapTitle {
+      @include wrapTitleDesktop(-220%);
+    }
+    &__title {
+      font-family: $font-p;
+      font-size: 1.2em;
+      margin: 5px 0;
+    }
+    &_whos{
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      margin-left: 200px;
+    }
+    &_lorem{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      width: 350px;
+      font-size: larger;
+      line-height: 25px;
+      text-align: left;
+      margin-left: 30px;
+    }
+  }
+}
