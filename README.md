@@ -24,4 +24,4 @@ HTML5 and CSS3
 WIP
 
 ## Link
-https://vdourson2.github.io/kababi-food/
+[Github page](https://vdourson2.github.io/kababi-food/)
