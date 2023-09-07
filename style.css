@@ -498,6 +498,50 @@ html body header {
     padding: 5px 0 0 0;
   }
 }
+@media only screen and (min-width: 1024px) {
+  .menu {
+    height: 50vw;
+  }
+  .menu__wrapItems {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    width: 70vw;
+    margin: 50px auto;
+    gap: 15px;
+  }
+  .menu__wrapItems__item {
+    border: dashed 4px white;
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 10px 15px;
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+    grid-template-rows: 40px 40px;
+    grid-template-areas: "title price" "description price";
+  }
+  .menu__wrapItems__item:hover {
+    border: dashed 4px #C8A969;
+  }
+  .menu__wrapItems__item__title {
+    grid-area: title;
+    font-size: 34px;
+    font-family: "Nanum Myeongjo", serif;
+  }
+  .menu__wrapItems__item__description {
+    grid-area: description;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+  }
+  .menu__wrapItems__item__price {
+    grid-area: price;
+    color: #C8A969;
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
 .about {
   position: relative;
   box-sizing: border-box;
