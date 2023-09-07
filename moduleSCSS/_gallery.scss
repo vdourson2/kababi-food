@@ -29,6 +29,14 @@
           height: 270px;
         }
       }
+      &_food3{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        img{
+          width: 240px;
+          height: 270px;
+        }
+      }
     }
     .more_infos{
       text-align: center;
@@ -39,3 +47,7 @@
       border: 1px solid $color-black;
     }
 }
+
+@media only screen and (min-width: 1024px){
+
+}  

@@ -6,7 +6,7 @@ html {
     min-height: 100%;
     margin: 0;
     header {
-      min-height: 100vh;
+      min-height: 120vw;
     }
   }
 }
@@ -102,6 +102,7 @@ html {
   }
 }
 @media only screen and (min-width: 1024px) {
+  
   li {
     display: inline;
   }
