@@ -14,8 +14,8 @@ Becode exercice : train HTML and css by re-creating a food website
 HTML5 and CSS3
 
 ## Authors
-Valentin Lefort
-Virginie Dourson
+- Valentin Lefort
+- Virginie Dourson
 
 ## Date
 09/2023
