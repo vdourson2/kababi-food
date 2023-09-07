@@ -40,7 +40,9 @@
             font-size: 20px;
         }
         &__list {
-            
+            i{
+                color:$color-darkgold
+            }
         }
         &__item {
             padding: 5px 0;
