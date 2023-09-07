@@ -620,4 +620,24 @@ html body header {
   font-size: 0.8rem;
   margin: 0;
   padding: 5px 0 0 0;
+}
+.gallery .gallery_image_food1 img {
+  width: 480px;
+  vertical-align: bottom;
+}
+.gallery .gallery_image_food2 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.gallery .gallery_image_food2 img {
+  width: 240px;
+  height: 270px;
+}
+.gallery .more_infos {
+  text-align: center;
+  margin: auto;
+  text-transform: capitalize;
+  margin: 5px 150px 5px 150px;
+  padding: 5px;
+  border: 1px solid black;
 }/*# sourceMappingURL=style.css.map */
