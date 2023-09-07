@@ -649,6 +649,10 @@ html body header {
   height: 230vw;
   font-family: "Nanum Myeongjo", serif;
 }
+.blog_news1 {
+  background-color: #d9d9d9;
+  padding-top: 10px;
+}
 .blog__filigran {
   position: relative;
   z-index: -2;
@@ -692,6 +696,6 @@ html body header {
   color: #C8A969;
 }
 .blog p {
-  margin: 10px;
+  padding: 10px;
   text-align: center;
 }/*# sourceMappingURL=style.css.map */
