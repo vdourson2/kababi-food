@@ -6,6 +6,8 @@
   font-family: $font-titles;
 
   &__filigran{
+      position:relative;
+      z-index:-2;
       @extend %filigran;
       margin:0.4em 0 0.2em 0;
     }

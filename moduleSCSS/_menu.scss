@@ -1,16 +1,73 @@
 .menu{
     position:relative;
-    box-sizing: border-box;
+    z-index: 0;
     width: 100%;
-    height:230vw;
+    height:170vw;
+    padding: 20px;
     font-family: $font-titles;
+    background-position: 0% 80% ;
+    background-color: rgba(250,237,210,0.5);
+    background-repeat: no-repeat;
+    background-position:left bottom;
+    // background-size:contain;
+}
 
-    &__filigran{
-        @extend %filigran;
-        margin:0.4em 0 0.2em 0;
-      }
+.menu__filigran{
+    @extend %filigran;
+    margin:0.4em 0 0.2em 0;
+}  
     
-      &__wrapTitle{
+.menu__wrapTitle{
         @include wrapTitle(-160%);
-      }
+}
+    
+.menu__wrapItems {
+    position:relative;
+    z-index: 2;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8,1fr);
+    width:70vw;
+    margin:50px auto;
+    gap: 15px;
+    &__item {
+        border:dashed 2px white;
+        border-radius: 4px;
+        background-color: #fff;
+        padding: 10px 15px;
+        display: grid;
+        grid-template-columns: 6fr 1fr;
+        grid-template-rows: 20px 20px;
+        
+        grid-template-areas: 
+        "title price"
+        "description price";
+        &:hover{
+            border:dashed 2px $color-darkgold;
+        }
+        &__title{
+            grid-area: title;
+            font-family: $font-titles;
+        }
+        &__description {
+            grid-area: description;
+            font-family: $font-p;
+            font-size:12px;
+        }
+        &__price {
+            grid-area: price;
+            color: $color-darkgold;
+            font-size: 25px ;
+            line-height: 40px;
+        }
+    }
+}
+
+.menu__img {
+    position:absolute;
+    display:block;
+    top: 45vw;
+    margin-left: -70px;
+    z-index: 1;
+    
 }
