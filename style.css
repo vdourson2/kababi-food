@@ -59,7 +59,7 @@ table {
   border-spacing: 0;
 }
 
-.gallery__filigran, .about__filigran, .menu__filigran, .category__up__filigran {
+.chefs__filigran, .gallery__filigran, .about__filigran, .menu__filigran, .category__up__filigran {
   text-transform: uppercase;
   font-size: 70px;
   font-weight: 800;
@@ -459,7 +459,7 @@ html body header {
 .menu__img {
   position: absolute;
   display: block;
-  top: 45vw;
+  top: 43vw;
   margin-left: -70px;
   z-index: 1;
 }
@@ -594,7 +594,7 @@ html body header {
   position: relative;
   box-sizing: border-box;
   width: 100%;
-  height: 230vw;
+  height: 280vw;
   font-family: "Nanum Myeongjo", serif;
 }
 .gallery__filigran {
@@ -640,4 +640,52 @@ html body header {
   margin: 5px 150px 5px 150px;
   padding: 5px;
   border: 1px solid black;
+}
+
+.chefs {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  height: 150vw;
+  padding: 20px;
+  font-family: "Nanum Myeongjo", serif;
+  background-image: url(assets/img/our-chefs/imgbg-ourchefs.jpg);
+}
+
+.chefs__filigran {
+  margin: 0.4em 0 0.2em 0;
+}
+
+.chefs__wrapTitle {
+  position: absolute;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -160%);
+  color: white;
+}
+.chefs__wrapTitle__title {
+  text-transform: uppercase;
+  font-size: large;
+  text-align: center;
+  margin: 0;
+}
+.chefs__wrapTitle__text {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  font-size: 0.8rem;
+  margin: 0;
+  padding: 5px 0 0 0;
+}
+
+.chefs__wrapPhotos {
+  width: 77vw;
+  margin: 10vw auto;
+  display: grid;
+  grid-template-columns: 37vw 37vw;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 3vw;
+}
+.chefs__wrapPhotos__photos {
+  display: block;
+  width: 37vw;
 }/*# sourceMappingURL=style.css.map */
