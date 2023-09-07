@@ -694,7 +694,7 @@ html body header {
   position: relative;
   box-sizing: border-box;
   width: 100%;
-  height: 230vw;
+  height: 310vw;
   font-family: "Nanum Myeongjo", serif;
 }
 .blog_brand {
@@ -757,4 +757,78 @@ html body header {
 .blog p {
   padding: 10px;
   text-align: center;
+}
+
+.footer {
+  background-color: black;
+  color: #C5BAA5;
+  font-family: "Open Sans", sans-serif;
+  padding: 20px;
+}
+.footer__logo {
+  display: block;
+  width: 50%;
+  margin: 30px auto;
+}
+.footer__grid {
+  width: 80vw;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 120px 150px 240px;
+  row-gap: 40px;
+  grid-template-areas: "newsletter newsletter" "about facilities" "contact contact";
+}
+.footer__grid > .aboutFooter {
+  grid-area: about;
+}
+.footer__grid > .facilities {
+  grid-area: facilities;
+}
+.footer__grid > .newsletter {
+  grid-area: newsletter;
+}
+.footer__grid > .contact {
+  grid-area: contact;
+}
+.footer__nav__heading {
+  color: white;
+  font-weight: bold;
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 20px;
+}
+.footer__nav__item {
+  padding: 5px 0;
+  font-weight: bold;
+  font-size: 14px;
+}
+.footer__nav__item__p {
+  margin: 5px 0;
+}
+.footer__nav__text {
+  line-height: 20px;
+  margin: 10px 0;
+}
+.footer__nav__form {
+  margin: 10px 0 20px 0;
+}
+.footer__nav__input {
+  padding: 5px 0 5px 10px;
+}
+.footer__footer {
+  width: 80vw;
+  margin: auto;
+}
+.footer__footer__img {
+  display: block;
+  width: 30px;
+  margin: 20px auto;
+}
+
+footer a {
+  text-decoration: none;
+  color: #C5BAA5;
+}
+footer a:hover {
+  color: #C8A969;
 }/*# sourceMappingURL=style.css.map */
