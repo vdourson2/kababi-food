@@ -59,7 +59,7 @@ table {
   border-spacing: 0;
 }
 
-.gallery__filigran, .about__filigran, .menu__filigran, .category__up__filigran {
+.blog__filigran, .gallery__filigran, .about__filigran, .menu__filigran, .category__up__filigran {
   text-transform: uppercase;
   font-size: 70px;
   font-weight: 800;
@@ -594,7 +594,7 @@ html body header {
   position: relative;
   box-sizing: border-box;
   width: 100%;
-  height: 230vw;
+  height: 270vw;
   font-family: "Nanum Myeongjo", serif;
 }
 .gallery__filigran {
@@ -640,4 +640,58 @@ html body header {
   margin: 5px 150px 5px 150px;
   padding: 5px;
   border: 1px solid black;
+}
+
+.blog {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  height: 230vw;
+  font-family: "Nanum Myeongjo", serif;
+}
+.blog__filigran {
+  position: relative;
+  z-index: -2;
+  margin: 0.4em 0 0.2em 0;
+}
+.blog__wrapTitle {
+  position: absolute;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -160%);
+}
+.blog__wrapTitle__title {
+  text-transform: uppercase;
+  font-size: large;
+  text-align: center;
+  margin: 0;
+}
+.blog__wrapTitle__text {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  font-size: 0.8rem;
+  margin: 0;
+  padding: 5px 0 0 0;
+}
+.blog_img1 {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.blog_ww {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.blog_ww h6 {
+  justify-content: space-between;
+  align-content: space-between;
+  margin: 20px;
+}
+.blog_ww h6 i {
+  color: #C8A969;
+}
+.blog p {
+  margin: 10px;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
